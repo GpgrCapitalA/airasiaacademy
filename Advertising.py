@@ -23,7 +23,7 @@ def user_input_features():
 df = user_input_features()
 
 st.subheader('User Input parameters')
-st.write(df.at[0,'TV'],[0,'Radio'],[0,'Newspaper'])
+st.write(df.at[0,'TV','Radio','Newspaper'])
 
 loaded_model = pickle.load(open("AdvertisingLinearRegression.h5", "rb"))
 
